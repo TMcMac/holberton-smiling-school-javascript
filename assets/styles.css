@@ -1,0 +1,277 @@
+/* SUMMARY
+    1. GLOBAL
+    2. Header
+    3. Main
+    Media Queries
+    Bootstrap Background Image Fix
+*/
+
+/*** 1. GLOBAL ***/
+
+:root {
+    --color-dark: #071629;
+    --color-light: #FFFFFF;
+    --color-accent: #C271FF;
+    --font-family: "Source Sans Pro", "Spin-Cycle-OT", arial;
+
+}
+
+body {
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    width: 100%;
+}
+.white-text {
+    color: var(--color-light);
+}
+.dark-text {
+    color: var(--color-dark);
+}
+.less-dar-text {
+    color: var(--color-dark);
+    opacity: 50%;
+}
+.accent-text {
+    color: var(--color-accent);
+}
+.bg-dark {
+    background-color: var(--color-dark);
+}
+.bg-light {
+    background-color: var(--color-light);
+}
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+
+/*** 2.  Header ***/
+.homepage-hero {
+    background-image: url("images/pic_1.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    color: white;
+    margin-top: 0;
+}
+
+.pricing-hero {
+    background-image: url("images/pic_2.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    color: white;
+    margin-top: 0;
+}
+
+.courses-hero {
+    background-image: url("images/pic_3.jpg"), linear-gradient(to top, #071629 50%, transparent);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    color: white;
+    margin-top: 0;   
+}
+
+    /** Nav Bar **/
+
+.navbar-brand img {
+    height: 1.8rem;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-light);
+    font-family: var(--font-family);
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--color-accent)!important;
+}
+
+    /** Header content **/
+
+.banner {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 10rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+
+.underbanner a {
+    color: var(--color-light);
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+.cta-btn {
+    margin-top: 2rem;
+}
+
+.btn {
+    color: var(--color-light);
+    background: #C271FF;
+}
+
+.btn-shadow {
+	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+    /** Profiles Section **/
+
+#profiles {
+    margin-top: 5rem;
+}
+
+.profile {
+    max-width: 9.375rem;
+    margin: 0 2rem;
+}
+.profile > img {
+    width: 9.375rem;
+}
+.profile > p {
+    font-style: italic;
+}
+
+.holberton_school-icon-check {
+    color:greenyellow;
+}
+
+/*** 2.  Main ***/
+
+    /** Carousels **/
+
+.carousel-of-quotes {
+    background-color: var(--color-accent);
+    color: var(--color-light)!important;
+    width: 100%;
+}
+
+/* Still trying to get this right, defualts in for now */
+/* .carousel-control-next-icon-light {
+    background-image: url("images/arrow_white_right.png")!important;
+}
+.carousel-control-prev-icon-light {
+    background-image: url("images/arrow_white_left.png")!important;
+}
+.carousel-control-next-icon-dark {
+    background-image: url("images/arrow_black_right.png")!important;
+}
+.carousel-control-prev-icon-dark {
+    background-image: url("images/arrow_black_left.png")!important;
+} */
+
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1 !important;
+}
+
+.tutorials-h1, .tutorials-p, .tutorials-arrow {
+    color:  var(--color-dark);
+}
+
+.holberton_school-icon-arrow_4, .holberton_school-icon-arrow_3 {
+    font-size: 64px;
+}
+
+.tutorials-p {
+    font-size: 14px;
+}
+
+[class^="tutorial-bg-"] {
+    width: 100%;
+    height: 9.6rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+[class^="tutorial-"] img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.tutorial-bg-4 {
+    background-image: url(images/thumbnail_4.jpg);
+}
+
+.tutorial-bg-3 {
+    background-image: url(images/thumbnail_3.jpg);
+}
+
+.tutorial-bg-2 {
+    background-image: url(images/thumbnail_2.jpg);
+}
+
+.tutorial-bg-1 {
+    background-image: url(images/thumbnail_1.jpg);
+}
+
+    /** Membership **/
+
+.membership-card {
+    color: var(--color-light);
+    width: 153px;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+    /** FAQ **/
+.faq {
+    color: var(--color-dark) !important;
+}
+
+/*** Footer ***/
+.social-media-icons {
+    font-size: 2rem;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Switch to Tablet view for <=768px */
+@media (max-width: 768px) {
+    header {
+        background-size: 1448.15px 1055px, cover;
+    }
+
+    .banner {
+        font-size: 6rem;
+    }
+}
+/* Swtich to Mobile view for <=576px */
+@media (max-width:  576px) {
+    .banner {
+        font-size: 4rem;
+    }
+}
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+
+/*-- CSS for loader --*/
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
