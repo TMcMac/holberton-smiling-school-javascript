@@ -198,6 +198,7 @@ body {
   height: 4rem;
 }
 
+/*
 .tutorial-bg-4 {
     background-image: url(images/thumbnail_4.jpg);
 }
@@ -212,6 +213,13 @@ body {
 
 .tutorial-bg-1 {
     background-image: url(images/thumbnail_1.jpg);
+}
+*/
+
+.tutorials-h1,
+.tutorials-p,
+.tutorials-arrow {
+    color: black;
 }
 
     /** Membership **/

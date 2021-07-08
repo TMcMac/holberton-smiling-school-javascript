@@ -19,7 +19,7 @@ $( document ).ready(() => {
 		(data, status) => {
 			if (status === 'success') {
 				data.forEach(element => {
-					$(".carousel-inner").append(
+					$(".carousel-of-quotes .carousel-inner").append(
 						$("<div>", {
 							class: element["id"] === 1 ? "carousel-item active" : "carousel-item"
 						}).append(
