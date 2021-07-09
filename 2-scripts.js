@@ -61,7 +61,7 @@ const createTutorials = () => {
 					carouselItem.attr("class",
 						element["id"] === 1 ? `carousel-item active item-${element["id"]}` : `carousel-item item-${element["id"]}`);
 					
-					const card = $(`<div class="card card-${element["id"]} card-col-lg-3 col-md-6 col-sm-12 border-0">`)
+					const card = $(`<div class="card card-${element["id"]} col-lg-3 col-md-6 col-sm-12 border-0">`)
 							.append($(`<img class="card-img-top" src=${element["thumb_url"]}>`),
 								$(`<div class="card-body">`)
 									.append(
