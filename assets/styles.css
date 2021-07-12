@@ -219,7 +219,7 @@ body {
 .tutorials-h1,
 .tutorials-p,
 .tutorials-arrow {
-    color: black;
+    color: var(--color-dark);
 }
 
     /** Membership **/
